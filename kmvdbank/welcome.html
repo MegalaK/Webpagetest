@@ -8,13 +8,15 @@
 <tr>
 	<ul>
 	<td align="right">UserID</td>
-	<td><INPUT TYPE="text" NAME="uid" MAXLENGTH="10" onKeyUp="validateuserid();" onBlur="validateuserid();"><label id="message23"></label></td>
+	<td><INPUT TYPE="text" NAME="uid" MAXLENGTH="10" onKeyUp="validateuserid();" onBlur="validateuserid();">
+		<label id="username"></label></td>
 </tr>
 
 <!-- Display Password and its text box-->
 <tr>
 	<td align="right">Password</FONT></td>
-	<td><INPUT TYPE="password" NAME="password" onKeyUp="validatepassword();" onBlur="validatepassword();"><label id="message18"></label></td>
+	<td><INPUT TYPE="password" NAME="password" onKeyUp="validatepassword();" onBlur="validatepassword();">
+		<label id="password"></label></td>
 </tr>
 
 <tr>
@@ -24,5 +26,12 @@
 </tr>
 
 </table>
-</form><br><br><br><br><br><br><br>	
+</form><br><br><br><br><br><br><br>
+
+<script>
+function myFunction() {
+  var username = document.getElementById("username");
+  alter(username)
+}
+</script>
 </html>
