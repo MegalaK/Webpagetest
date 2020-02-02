@@ -36,8 +36,9 @@
 <script>
 function myFunction2() {
   var inpObj = document.getElementById("username");
-  if (!inpObj.checkValidity()) {
-    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+  alert(inpObj)
+  if (inpObj) {
+    document.getElementById("demo").innerHTML = ;
   } else {
     document.getElementById("demo").innerHTML = "Input OK";
   } 
