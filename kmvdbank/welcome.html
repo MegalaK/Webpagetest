@@ -1,10 +1,5 @@
 <html>
-	<script>
-function myFunction() {
-  var username = document.getElementById("username");
-  alter(username)
-}
-</script>
+
 	
 <form NAME="frmLogin" METHOD="POST" ACTION="index.php">
 
@@ -15,28 +10,39 @@ function myFunction() {
 <tr>
 	<ul>
 	<td align="right">UserID</td>
-	<td><INPUT TYPE="text" NAME="uid" MAXLENGTH="10" onKeyUp="validateuserid();" onBlur="validateuserid();">
-		<label id="username"></label></td>
+	<td><INPUT id="username" TYPE="text" NAME="uid" MAXLENGTH="10" onKeyUp="validateuserid();" onBlur="validateuserid();">
+		<label id="message1"></label></td>
 </tr>
 
 <!-- Display Password and its text box-->
 <tr>
 	<td align="right">Password</FONT></td>
-	<td><INPUT TYPE="password" NAME="password" onKeyUp="validatepassword();" onBlur="validatepassword();">
-		<label id="password"></label></td>
+	<td><INPUT id="password" TYPE="password" NAME="password" onKeyUp="validatepassword();" onBlur="validatepassword();">
+		<label id="messag2"></label></td>
 </tr>
 
 <tr>
 <td></td>
 <td><input type ="submit" name ="btnLogin" value ="LOGIN">
 <input type ="reset" name ="btnReset" value ="RESET">
-<button onclick="myFunction()">MYOK</button>
+<button onclick="myFunction2()">MYOK</button>
 	
 	</td>
 </tr>
 
 </table>
 </form><br><br><br><br><br><br><br>
-
+<p id="demo"></p>
+<script>
+function myFunction2() {
+  var inpObj = document.getElementById("username");
+  if (!inpObj.checkValidity()) {
+    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+  } else {
+    document.getElementById("demo").innerHTML = "Input OK";
+  } 
+} 
+</script>
+</body>
 
 </html>
