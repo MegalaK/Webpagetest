@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PhpTravelsv2]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FlightSearch Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.Phptravels.TestCases.TC_FLLoginDDT_002">
+        <methods>
+          <include name="loginDDT" invocation-numbers="0 1 2 3"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Phptravels.TestCases.TC_FLLoginDDT_002 -->
+    </classes>
+  </test> <!-- FlightSearch Test2(failed) -->
+</suite> <!-- Failed suite [PhpTravelsv2] -->

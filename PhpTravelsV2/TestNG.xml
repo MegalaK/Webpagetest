@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PhpTravelsv2">
+<!-- 
+	<test name = "FlightSearch Test">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name = "com.Phptravels.TestCases.TC_FLLoginTest_001" >
+			</class>
+		</classes>
+	</test> 
+-->
+
+	<test name = "FlightSearch Test2">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name = "com.Phptravels.TestCases.TC_FLLoginDDT_002">
+			</class>
+		</classes>
+		</test> 
+</suite>
