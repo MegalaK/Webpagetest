@@ -18,6 +18,8 @@ public class TC_FLLoginDDT_002 extends BaseClass{
 		driver.get(baseURL);
 		Thread.sleep(5000);
 		System.out.println("DataDrivenTest Started");
+		System.out.println("Test Started");
+
 		LoginPage lp = new LoginPage(driver);
 		lp.setUsername(user);
 		
